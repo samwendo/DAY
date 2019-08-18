@@ -1,49 +1,85 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AKAN NAME GENERATOR</title>
-</head>
-<body>
-<form>
-    <h1>AKAN NAME GENERATOR</h1>
-     <label for="centaury">
-      Centaury:<br>
-     <input type="text"placeholder="CC"><br><br>     
-     </label>
-     <label for="date-of-birth">
-     Date:<br>
-     <input type="text" placeholder="DD" name="date-of-birth" id="DD"><br>
-     </label>
-     <br>
-     <label for="month-of-birth">
-      Month:<br>
-     <input type="text" placeholder="MM"  name="month-of-birth" id="MM"> <br>
-     </label>
-       <br>
-     <label for="year-of-birth">
-       Year:<br>
-       <input type="text" placeholder="YYYY" name="year-of-birth" id="YY"> <br>
-       </label>
-       <br><br>
-     <label for="select-gender">
-           
-      Male:<br>
-      <input type="radio" name="select-gender"><br>
-     
-      female:<br>
-     <input type="radio" name="select-gender"><br>
-     </label>
-     <br><br>
-     <button type="button" class="btn btn-outline-primary">SUBMIT</button>
 
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      
+
+
+
+        <h1>AKAN NAME GREETER</h1>
+
+       <h2>
+        <p>Welcome to Akan Name generetout 
+          Akan names were used by the people of Ghana to name there children according to the day in which they were born </p>
+        <p>In this simple web application you will be aloud to put in you date of birth and the web application will tell you on what day you were born as well as your Akan Name </p>
+        <ul>
+          Male
+           <li> Monday - Kwadwo  </li>
+           <li> Tuesday - Kwadwo </li>
+           <li> wednesday - Kwaku</li>
+           <li> Thursday - Yaw </li>
+           <li> Friday - Kofi </li>
+           <li> Saturday - Kwame </li>
+           <li> Sunday -  Kwasi </li>
+           Female
+           <li> Monday - Adwoa </li>
+           <li> Tuesday - Adenaa </li>
+           <li> Wednesday - Akua </li>
+           <li> Thursday - Yaa </li>
+           <li> Friday - Afua </li>
+           <li> Saturday - Ama</li>
+           <li> Sunday - Akosua</li>
+
+        </ul>
         
-    </form>
-<link rel="java script" href="js/script.js" type="text/js" media="all">
-  
+        <p>Have fun</p>
+       </h2>
+
+
+        <div class="panel col-sm-6 offset-sm-3">
+          <div class="form-group top-form">
+            <label for="century" class="labels">Century</label> <br>
+            <input type="text" class="form-control" placeholder="Enter the century" id="century" required min="0"
+              max="30"> <br>
+          </div>
+          <div class="form-group">
+            <label for="year" class="labels">Year</label> <br>
+            <input type="text" placeholder="Enter the year" class="form-control" id="year" required min="0" max="100"> <br>
+          </div>
+          <div class="form-group">
+            <label for="month" class="labels">Month</label> <br>
+            <input type="text" class="form-control" placeholder="Enter the month of the year" id="month" required
+              min="0" max="12">
+          </div>
+          <div class="form-group">
+            <label for="monthDay" class="labels">Day of month</label> <br>
+            <input type="text" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="0" max="12"> <br>
+          </div>
+          <form class="radio-button">
+              Male <br>
+            <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required> <br>
+            Female <br>
+            <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required> <br>
+          </form>
+          <br>
+          <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2"
+              onclick="checkDayOfWeek();">SUBMIT</button></a>
+          <h1 id="result"></h1>
+        </div>
+      </div>
+    
+
+
+  </div>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
